@@ -1,0 +1,89 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+	color: #222;
+	line-height: 1.2em !important;
+	margin-bottom: 0;
+	margin-top: 0;
+/*	font-weight: 600*/
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	margin-bottom: 0;
+	margin-top: 0;
+font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+/*	font-weight: 600;*/
+	color: #222
+}
+
+h1,
+.h1 {
+	font-size: 36px
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0
+}
+
+.overlay-bg {
+	background:rgba(0, 0, 0, 0.5);
+	opacity:.8;
+}
+
+.banner-area {
+	background: url('assets/header-bg.jpg')center;
+	background-size: cover
+}
+
+.banner-area .overlay-bg {
+	background-color: rgba(59, 172, 240, 0.9)
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-black {
+	color: #000;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.laptop-container img{
+	z-index: 2;
+}
+
+.laptop-container {
+	margin-top: -20em
+}
+
+@media (max-width: 960px) {
+	.laptop-container {
+		margin-top:-16em;
+	}
+}
+
+@media (max-width: 480px) {
+	.laptop-container {
+		margin-top:-10em
+	}
+}
