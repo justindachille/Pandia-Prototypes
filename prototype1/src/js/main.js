@@ -1,3 +1,12 @@
+$(window).on('load', function() {
+	/*------------------
+		Preloder
+	--------------------*/
+	$(".loader").fadeOut(); 
+	$("#preloder").delay(250).fadeOut("slow");
+
+});
+
 $(document).ready(function () {
 	"use strict";
 
