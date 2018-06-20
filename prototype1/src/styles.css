@@ -202,6 +202,29 @@ h1,
 	background-color: #f9f9ff;
 	padding: 40px;
 	border-radius: 15px;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s
+}
+
+.option i,
+.option h3 {
+	color: #222
+}
+
+.option .fas {
+	font-size: 34px;
+}
+
+.option:hover {
+	background-color: white;
+	box-shadow: 0px 0px 20px 10px rgba(59, 172, 240, 0.2);
+}
+
+.option:hover .fas,
+.option:hover h3 {
+	color: lightskyblue;
 }
 
 .option i {
