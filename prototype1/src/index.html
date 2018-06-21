@@ -21,31 +21,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<script src="/js/easing.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="assets/js/easing.min.js"></script>
+	<script src="assets/js/main.js"></script>
 	<script>
-	$(window).on('load', function() {
-	/*------------------
-		Preloder
-	--------------------*/
-	$(".loader").fadeOut(); 
-	$("#preloder").delay(250).fadeOut("slow");
-
-	});
-	$(document).ready(function () {
-	"use strict";
-
-	var window_width = $(window).width(),
-		window_height = window.innerHeight,
-		header_height = $(".default-header").height(),
-		header_height_static = $(".site-header.static").outerHeight(),
-		fitscreen = window_height - header_height;
-
-
-	$(".fullscreen").css("height", window_height)
-	$(".fitscreen").css("height", fitscreen);
-	console.log("jquery");
-});
 	</script>
 </body>
 

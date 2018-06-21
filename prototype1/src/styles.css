@@ -1,64 +1,69 @@
 @font-face {
 	font-family: "Futura";
-	src: url("/fonts/Futura.woff");
+	src: url("/assets/fonts/futura medium condensed bt.ttf") format("truetype");
+}
+
+:root {
+	--header-color:#20509e;
 }
 
 html,
 body {
 	height: 100%;
 	font-family: "Lato", sans-serif;
+	color: #777;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-}
-
-body {
-	font-family: "Lato", sans-serif;
 	font-size: 14px;
 	font-weight: 300;
-	line-height: 1.6;
-	letter-spacing: 1pt;
-	text-align: center;
+	line-height: 1.625em;
 	position: relative;
 }
 
 h1,
+h2,
 h3,
 h4,
 h5,
 h6 {
 	font-family: "Futura", sans-serif;
-	color: #222;
+	color: var(--header-color);
 	line-height: 1.2em !important;
 	text-rendering: optimizeLegibility;
-	/*	font-weight: 600*/
-}
-
-.h1,
-.h3,
-.h4,
-.h5,
-.h6 {
-	font-family: "Futura", sans-serif;
-	color: #222;
-	line-height: 1.2em !important;
-	text-rendering: optimizeLegibility;
-	/*	font-weight: 600*/
-}
-
-h1,
-.h1 {
-	font-size: 36px
-}
-
-h2,
-.h2 {
-	font-family: "Futura", sans-serif;
+	margin: 0;
 	font-weight: 500;
+	/*	font-weight: 600*/
 }
 
-h5,
-.h5 {
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 48px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
 	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
 }
 
 /* Preloder */
@@ -140,6 +145,24 @@ h5,
 	font-size: 48px;
 }
 
+.text-white {
+	color: #fff!important;
+}
+
+.text-black {
+	color: #000!important;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+/* Banner */
+
 .overlay {
 	position: absolute;
 	left: 0;
@@ -157,6 +180,10 @@ h5,
 	padding-bottom: 20px;
 }
 
+.banner-content {
+	margin-top: -100px;	
+}
+
 .banner-area {
 	background: url('assets/header-bg.jpg')center;
 	background-size: cover
@@ -166,21 +193,7 @@ h5,
 	background-color: rgba(59, 172, 240, 0.9)
 }
 
-.text-white {
-	color: #fff!important;
-}
-
-.text-black {
-	color: #000!important;
-}
-
-.text-align-center {
-	text-align: center;
-}
-
-.text-bold {
-	font-weight: bold;
-}
+/* Options */
 
 .laptop-container img {
 	z-index: 2;
@@ -202,10 +215,13 @@ h5,
 	}
 }
 
-/* Options */
-
 .option-header {
 	padding: 20px;
+	padding-top: 48px;
+}
+
+.option-header h2 {
+	color: var(--header-color);
 }
 
 .option-section .container {
@@ -216,7 +232,7 @@ h5,
 	margin-bottom: 45px;
 	text-align: center;
 	background-color: #f9f9ff;
-	padding: 40px;
+	padding: 45px;
 	border-radius: 15px;
 	-webkit-transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
@@ -278,6 +294,7 @@ h5,
 }
 
 .feature h5 {
+	font-size: 24px;
 	text-align: left;
 	margin-bottom: 15px;
 	color: white;
@@ -292,3 +309,6 @@ h5,
 .feature .feature-text {
 	margin-left: 72px;
 }
+
+/* Team */
+
