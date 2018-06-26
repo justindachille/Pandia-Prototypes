@@ -9,7 +9,6 @@
 
 html,
 body {
-	height: 100%;
 	font-family: "Lato", sans-serif;
 	color: #777;
 	-webkit-font-smoothing: antialiased;
@@ -197,6 +196,10 @@ textarea:focus {
 	background-position: center 0;
 }
 
+.relative {
+	position: relative
+}
+
 .section-shadow {
 	-webkit-box-shadow: 0px 0px 48px 10px rgba(0, 0, 0, 1);
 	-moz-box-shadow: 0px 0px 48px 10px rgba(0, 0, 0, 1);
@@ -211,6 +214,16 @@ textarea:focus {
 	position: relative;
 }
 
+.section-inset-shadow {
+	-webkit-box-shadow: inset 0px 88px 64px -80px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset 0px 88px 64px -80px rgba(0, 0, 0, 0.75);
+	box-shadow: inset 0px 88px 64px -80px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: inset 0px -88px 64px -80px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset 0px -88px 64px -80px rgba(0, 0, 0, 0.75);
+	box-shadow: inset 0px -88px 64px -80px rgba(0, 0, 0, 0.75);
+	position: relative;
+}
+
 /* Banner */
 
 .overlay {
@@ -221,10 +234,12 @@ textarea:focus {
 	bottom: 0
 }
 
+/*
 .overlay-bg {
 	background: rgba(0, 0, 0, 0.5);
 	opacity: .8;
 }
+*/
 
 #main-banner {
 	padding-bottom: 20px;
@@ -512,8 +527,10 @@ textarea:focus {
 .footer-column {
 	margin-left: 100px;
 }
+
 .footer-title {
 	margin-bottom: 30px;
+	font-size: 24px;
 }
 
 .footer-section span {
@@ -525,7 +542,7 @@ textarea:focus {
 }
 
 .footer-section ul a {
-	font-size: 16px;
+	font-size: 18px;
 	color: #75849a;
 	display: block;
 	margin-bottom: 12px;
@@ -573,4 +590,23 @@ textarea:focus {
 
 .social .linkedin {
 	background: #4875B4;
+}
+
+.footer-bottom {
+	border-top: 1px solid #ebebeb;
+	padding: 30px 0;
+}
+
+.footer-nav {
+	list-style: none;
+}
+
+.footer-nav li {
+	display: inline-block;
+}
+
+.footer-nav li a {
+	color: #75849a;
+	font-size: 14px;
+	margin-left: 20px;
 }
