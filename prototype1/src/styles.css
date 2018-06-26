@@ -28,7 +28,6 @@ h5,
 h6 {
 	font-family: "Futura", sans-serif;
 	color: var(--header-color);
-	line-height: 1.2em !important;
 	text-rendering: optimizeLegibility;
 	margin: 0;
 	font-weight: 500;
@@ -68,6 +67,19 @@ p {
 img {
 	max-width: 100%;
 }
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
 
 input:focus,
 select:focus,
@@ -494,6 +506,71 @@ textarea:focus {
 	box-shadow: 0px 23px 49px 0px rgba(223, 229, 231, 1);
 }
 
-.blog-section .crop {
-	overflow:hidden;
+
+/* Footer Section */
+
+.footer-column {
+	margin-left: 100px;
+}
+.footer-title {
+	margin-bottom: 30px;
+}
+
+.footer-section span {
+	color: #acb9cc;
+}
+
+.footer-section ul {
+	list-style: none;
+}
+
+.footer-section ul a {
+	font-size: 16px;
+	color: #75849a;
+	display: block;
+	margin-bottom: 12px;
+}
+
+.footer-section ul li:last-child a {
+	margin-bottom: 0;
+}
+
+.social a {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-block;
+	margin-right: 10px;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+.social a:last-child {
+	margin-right: 0;
+}
+
+.social .facebook {
+	background: #4b6cd0;
+}
+
+.social .google {
+	background: #f03b3b;
+}
+
+.social .instagram {
+	background: #bb8950;
+}
+
+.social .twitter {
+	background: #49a7f3;
+}
+
+.social .yelp {
+	background: #D32323;
+}
+
+.social .linkedin {
+	background: #4875B4;
 }
