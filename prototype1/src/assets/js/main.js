@@ -16,8 +16,20 @@ $(document).ready(function () {
 		header_height_static = $(".site-header.static").outerHeight(),
 		fitscreen = window_height - header_height;
 
+
 	$(".fullscreen").css("height", window_height)
 	$(".fitscreen").css("height", fitscreen);
+
+	// Initiate superfish on nav menu
+	$('.nav-menu').superfish({
+		animation: {
+			opacity: 'show',
+			height: 'show'
+		},
+		speed: 400,
+		autoArrows: false,
+		delay: 400
+	});
 
 	// Mobile Navigation
 	if ($('#nav-menu-container').length) {
