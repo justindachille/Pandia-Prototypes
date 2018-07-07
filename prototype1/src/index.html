@@ -21,12 +21,20 @@
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
-	<app-root></app-root>
+	<app-home></app-home>
+	<h1>Angular Router</h1>
+	<nav>
+		<a routerLink="/home" routerLinkActive="active">Home</a>
+		<a routerLink="about" routerLinkActive="active">About</a>
+	</nav>
+	<router-outlet></router-outlet>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="/assets/js/hoverIntent.js"></script>
 	<script src="/assets/js/superfish.js"></script>
 	<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js">
+
+
 	</script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<script src="/assets/js/easing.min.js"></script>
