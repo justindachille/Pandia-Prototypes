@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ModuleWithProviders } from '@angular/core/src/metadata/ng_module';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
