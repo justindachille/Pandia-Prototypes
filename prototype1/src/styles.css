@@ -259,8 +259,6 @@ textarea:focus {
 	}
 }
 
-
-
 .header #logo h1 {
 	font-size: 34px;
 	margin: 0;
@@ -379,7 +377,8 @@ textarea:focus {
 	font-weight: 400;
 	font-size: 12px;
 	text-transform: uppercase;
-	outline: none
+	outline: none;
+	cursor: pointer;
 }
 
 .nav-menu > li {
@@ -921,4 +920,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 	color: #75849a;
 	font-size: 14px;
 	margin-left: 20px;
+}
+
+/* About Area */
+
+.about-area {
+	background: #fff;
+}
+
+.about-area p {
+	margin-bottom: 20px;
 }
