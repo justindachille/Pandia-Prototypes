@@ -10,10 +10,10 @@
 					<ul class="nav-menu">
 						<li class="menu-active"><a class="links-debug" routerLink="">Home</a></li>
 						<li><a class="links-debug" routerLink="/about">About Us</a></li>
-						<li><a href="#options-header">Options</a></li>
-						<li><a href="#process">Process</a></li>
-						<li><a href="#team">Team</a></li>
-						<li><a href="#blog">Blog</a></li>
+						<li><a onClick="scrollToElement(options)" id="option-header-nav" du-smooth-scroll>Options</a></li>
+						<li><a onClick="scrollToElement(process)" id="process-header-nav">Process</a></li>
+						<li><a onClick="scrollToElement(team)" id="team-header-nav">Team</a></li>
+						<li><a onClick="scrollToElement(blog)" id="blog-header-nav">Blog</a></li>
 						<li><a class="ticker-btn" href="#">Get Started</a></li>
 					</ul>
 				</nav>
@@ -23,7 +23,7 @@
 
 <!-- End Header Section -->
 
-<router-outlet></router-outlet>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
 
 <!-- Footer Section -->
 

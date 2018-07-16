@@ -1,3 +1,4 @@
+/*eslint-env browser*/
 $(window).on('load', function () {
 	/*------------------
 		Preloder
@@ -7,7 +8,7 @@ $(window).on('load', function () {
 
 });
 
-$(window).resize(function(){
+$(window).resize(function () {
 	var window_width = $(window).width(),
 		window_height = window.innerHeight,
 		header_height = $(".default-header").height(),
@@ -126,3 +127,9 @@ $(document).ready(function () {
 	})
 
 });
+
+function scrollToElement(id) {
+	$.smoothScroll({
+		scrollTarget: id
+	});
+}
