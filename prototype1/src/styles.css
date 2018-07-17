@@ -373,7 +373,7 @@ textarea:focus {
 	padding: 6px 10px;
 	text-decoration: none;
 	display: inline-block;
-	color: #fff;
+	color: #fff !important;
 	font-weight: 400;
 	font-size: 12px;
 	text-transform: uppercase;
