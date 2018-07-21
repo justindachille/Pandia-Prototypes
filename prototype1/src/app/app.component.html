@@ -11,7 +11,7 @@
 					<ul class="nav-menu">
 						<li class="menu-active"><a class="links-debug" routerLink="">Home</a></li>
 						<li><a class="links-debug" routerLink="/about">About Us</a></li>
-						<li><a onClick="scrollToElement(options)" id="option-header-nav" du-smooth-scroll>Options</a></li>
+						<li><a id="option-header-nav" (click)="onAnchorClick()" onClick="scrollToElement(options)">Options</a></li>
 						<li><a onClick="scrollToElement(process)" id="process-header-nav">Process</a></li>
 						<li><a onClick="scrollToElement(team)" id="team-header-nav">Team</a></li>
 						<li><a onClick="scrollToElement(blog)" id="blog-header-nav">Blog</a></li>
