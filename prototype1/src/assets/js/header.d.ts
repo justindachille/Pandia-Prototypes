@@ -1,1 +1,1 @@
-export declare function resizeHeader();
+export declare function resizeHeader(path);

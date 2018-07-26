@@ -14,10 +14,10 @@ export class AppComponent {
 	constructor(private router : Router) {
 	}
 
-	onAnchorClick() {
-		console.log('test');
+	onAnchorClick(param) {
+		console.log("angular");
 		this.router.navigateByUrl('/home');
-		resizeHeader();
+		resizeHeader("test path");
 	}
 	
 	onActivate(event) {

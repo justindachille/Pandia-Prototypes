@@ -15,7 +15,6 @@ $(window).resize(function () {
 		header_height_static = $(".site-header.static").outerHeight(),
 		fitscreen = window_height - header_height;
 
-
 	$(".fullscreen").css("height", window_height);
 	$(".fitscreen").css("height", fitscreen);
 });
@@ -28,7 +27,6 @@ $(document).ready(function () {
 		header_height = $(".default-header").height(),
 		header_height_static = $(".site-header.static").outerHeight(),
 		fitscreen = window_height - header_height;
-
 
 	$(".fullscreen").css("height", window_height);
 	$(".fitscreen").css("height", fitscreen);
@@ -125,7 +123,6 @@ $(document).ready(function () {
 			$('#header').removeClass('header-scrolled');
 		}
 	})
-
 });
 
 function scrollToElement(id) {

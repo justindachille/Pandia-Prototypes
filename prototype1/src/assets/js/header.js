@@ -1,4 +1,4 @@
-export function resizeHeader() {
+export function resizeHeader(path) {
 	var window_width = $(window).width();
 	var window_height = window.innerHeight;
 	var header_height = $(".default-header").height();
@@ -13,4 +13,9 @@ export function resizeHeader() {
 	$.smoothScroll({
 		scrollTarget: top,
 	});
+	if (path) {
+		console.log(path);
+	} else {
+		console.log("no path");
+	}
 }
