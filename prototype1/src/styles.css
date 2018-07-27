@@ -17,6 +17,7 @@ body {
 	font-weight: 300;
 	line-height: 1.625em;
 	position: relative;
+/*	width: 100%;*/
 }
 
 h1,
@@ -956,4 +957,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 	max-width: 40%;
 	margin-right: 20px;
 	margin-bottom: 20px;
+}
+
+.mt-20 {
+	margin-top: 20px;
 }

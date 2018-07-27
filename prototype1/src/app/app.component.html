@@ -1,27 +1,27 @@
-	<!-- Header Section -->
-	
-	<div id="top"></div>
-	<header class="header" id="header">
-		<div class="container">
-			<div class="align-items-center justify-content-between d-flex">
-				<div id="logo" class="align-items-center">
-					<a href="index.html"><img src="/assets/img/logo.png"></a>
-				</div>
-				<nav id="nav-menu-container">
-					<ul class="nav-menu">
-						<li class="menu-active"><a class="links-debug" routerLink="">Home</a></li>
-						<li><a class="links-debug" routerLink="/about">About Us</a></li>
-						<li><a id="option-header-nav" (click)="onAnchorClick(options)" >Options</a></li>
-						<li><a onClick="scrollToElement(process)" id="process-header-nav">Process</a></li>
-						<li><a onClick="scrollToElement(team)" id="team-header-nav">Team</a></li>
-						<li><a onClick="scrollToElement(blog)" id="blog-header-nav">Blog</a></li>
-						<li><a class="ticker-btn" href="#">Get Started</a></li>
-					</ul>
-				</nav>
+<!-- Header Section -->
+
+<div id="top"></div>
+<header class="header" id="header">
+	<div class="container">
+		<div class="align-items-center justify-content-between d-flex">
+			<div id="logo" class="align-items-center">
+				<a href="index.html"><img src="/assets/img/logo.png"></a>
 			</div>
+			<nav id="nav-menu-container">
+				<ul class="nav-menu">
+					<li class="menu-active"><a class="links-debug" routerLink="">Home</a></li>
+					<li><a class="links-debug" routerLink="/about">About Us</a></li>
+					<li><a id="option-header-nav" (click)="onAnchorClick(options)">Options</a></li>
+					<li><a onClick="scrollToElement(process)" id="process-header-nav">Process</a></li>
+					<li><a onClick="scrollToElement(team)" id="team-header-nav">Team</a></li>
+					<li><a onClick="scrollToElement(blog)" id="blog-header-nav">Blog</a></li>
+					<li><a class="ticker-btn" href="#">Get Started</a></li>
+				</ul>
+			</nav>
 		</div>
-	</header>
-	
+	</div>
+</header>
+
 <!-- End Header Section -->
 
 <router-outlet (activate)="onActivate($event)" onload="onAnchorClick()"></router-outlet>
@@ -30,11 +30,11 @@
 
 <footer class="footer-section" id="footer">
 	<div class="container">
-		<div class="d-flex justify-content-center spad">
-			<div class="footer-column">
-				<p>Telemedicine services provided by Pandia Medical Group, a medical corporation.</p>
-				<span>Copyright &copy; 2016-<script type="text/javascript">document.write(new Date().getFullYear())</script> All rights reserved | Pandia Health, Inc</span>
-			</div>
+		<div class="footer-column d-flex justify-content-center mt-20">
+			<p class="text-center">Telemedicine services provided by Pandia Medical Group, a medical corporation. <br>
+			<span>Copyright &copy; 2016-<script type="text/javascript">document.write(new Date().getFullYear())</script> All rights reserved | Pandia Health, Inc</span> </p>
+		</div>
+		<div class="d-flex justify-content-center spad flex-wrap">
 			<div class="footer-column">
 				<h5 class="footer-title d-flex flex-nowrap text-nowrap">Our Story</h5>
 				<ul class="text-nowrap">

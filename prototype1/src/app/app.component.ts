@@ -16,12 +16,11 @@ export class AppComponent {
 
 	onAnchorClick(param) {
 		console.log("angular");
-		this.router.navigateByUrl('/home');
-		resizeHeader("test path");
+		resizeHeader("onAnchorClick");
 	}
 	
 	onActivate(event) {
-		resizeHeader();
+		resizeHeader("onActivate");
 	}
 }
 

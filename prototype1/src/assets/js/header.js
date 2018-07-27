@@ -9,11 +9,13 @@ export function resizeHeader(path) {
 
 	$(".fullscreen").css("height", window_height);
 	$(".fitscreen").css("height", fitscreen);
-	
-	$.smoothScroll({
-		scrollTarget: top,
-	});
+
 	if (path) {
+		if (path == "onActivate") {
+			$.smoothScroll({
+				scrollTarget: top,
+			});
+		}
 		console.log(path);
 	} else {
 		console.log("no path");
