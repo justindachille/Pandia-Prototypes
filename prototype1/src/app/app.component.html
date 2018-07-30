@@ -11,10 +11,10 @@
 				<ul class="nav-menu">
 					<li class="menu-active"><a class="links-debug" routerLink="">Home</a></li>
 					<li><a class="links-debug" routerLink="/about">About Us</a></li>
-					<li><a id="option-header-nav" (click)="onAnchorClick(options)">Options</a></li>
-					<li><a onClick="scrollToElement(process)" id="process-header-nav">Process</a></li>
-					<li><a onClick="scrollToElement(team)" id="team-header-nav">Team</a></li>
-					<li><a onClick="scrollToElement(blog)" id="blog-header-nav">Blog</a></li>
+					<li><a id="option-header-nav" onClick="scrollToElement(options)" (click)="onAnchorClick(options)">Options</a></li>
+					<li><a id="process-header-nav" onClick="scrollToElement(process)" (click)="onAnchorClick(process)" >Process</a></li>
+					<li><a id="team-header-nav"onClick="scrollToElement(team)" (click)="onAnchorClick(team)">Team</a></li>
+					<li><a id="blog-header-nav" onClick="scrollToElement(blog)" (click)="onAnchorClick(blog)">Blog</a></li>
 					<li><a class="ticker-btn" href="#">Get Started</a></li>
 				</ul>
 			</nav>

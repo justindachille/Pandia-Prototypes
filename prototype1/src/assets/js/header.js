@@ -11,12 +11,18 @@ export function resizeHeader(path) {
 	$(".fitscreen").css("height", fitscreen);
 
 	if (path) {
+		console.log("path: " + path);
 		if (path == "onActivate") {
 			$.smoothScroll({
 				scrollTarget: top,
 			});
 		}
-		console.log(path);
+
+		if (path == "onAnchorClick") {
+			if (!window.location.href.includes("home")) {
+				window.location.href = "/home";
+			}
+		}
 	} else {
 		console.log("no path");
 	}
