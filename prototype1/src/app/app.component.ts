@@ -14,7 +14,7 @@ export class AppComponent {
 	constructor(private router : Router) {
 	}
 
-	onAnchorClick(param) {
+	onAnchorClick() {
 		console.log("angular");
 		resizeHeader("onAnchorClick");
 	}
