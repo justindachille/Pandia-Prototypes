@@ -23,7 +23,7 @@
     "@angular/router": "^6.1.10",
     "angular-cli-ghpages": "^0.6.0",
     "core-js": "^2.6.9",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "rxjs": "^6.0.0",
     "superfish": "^1.7.10",
     "zone.js": "^0.8.29"
